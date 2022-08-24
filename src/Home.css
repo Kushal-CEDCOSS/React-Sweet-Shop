@@ -1,0 +1,184 @@
+.Home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 150vh;
+    width: 100%;
+}
+.Home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80vh; 
+    z-index: -1;
+    background-image: url('https://cdn.shopify.com/s/files/1/0618/9681/8894/files/bn2.1.png?v=1655871217');
+    transform: rotateY(180deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.85;
+}
+
+.entryText{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+.entryText h1{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 4.5vw;
+    color: #BB0607;
+    width: 100%;
+}
+.entryText p{
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5vw;
+    width: 40%;
+}
+.midText{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 3.5vw;
+    color: rgb(175, 17, 17);
+
+}
+.midArea{
+   width: 95%;
+   min-height: 50vh;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-evenly; 
+}
+.midCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25vw;
+    width: 25vw;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.midCard img{
+    width: 25vw;
+    height: 25vw;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: -1;
+}
+
+
+.midCard button{
+    position: relative;
+    bottom: 20%;
+    z-index: 2;
+    padding: 2%;
+    width: 15vw;
+    height: 5vw;
+    background-color: rgba(250, 250, 250, 0.651);
+    border: 1px solid white;
+    font-size: 1.8vw;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 1s ease-in-out;
+}
+
+.midCard button:hover{
+    width: 20vw;
+    font-size: 2vw;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.explore{
+    margin-bottom: 6%;
+    padding: 2%;
+    color: white;
+    background-color: black;
+    font-size: 2vw;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.6s ease-in-out;
+}
+
+.explore:hover{
+    transform: scale(1.115,1.025);
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+
+.bottomArea{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 60vh;
+    background-color: #F6F6F6;
+    margin-bottom: 5%;
+}
+
+.bottomArea img:first-child{
+    width: 15%;
+    height: 100%;
+    transform: rotateX(180deg);
+    border: 1px solid #F6F6F6;
+
+}
+
+.bottomArea img:last-child{
+    width: 15%;
+    height: 100%;
+    border: 1px solid #F6F6F6;
+    transform: rotateY(180deg);
+}
+.centerContainer{
+    width: 60%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+
+.centerContainer>h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 4.5vw;
+    font-weight: 100;
+    color: dodgerblue;
+}
+.centerContainer>p{
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5vw;
+    color: rgb(112, 2, 70);
+}
+
+.entryModal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 300px;
+    width: 350px;
+    position: absolute;
+    top: 50%;    
+    left: 50%;    
+    transform: translate(-50%, -50%);
+    background-image: url('https://cliply.co/wp-content/uploads/2019/06/401906190_ITS_COMPLICATED_400px.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+       
+}
+.entryModal > h1{
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: 100;
+    color: white; 
+}
